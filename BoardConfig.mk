@@ -12,6 +12,9 @@ DEVICE_PATH := device/xiaomi/sirius
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
 
+# Display
+TARGET_SCREEN_DENSITY := 480
+
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
