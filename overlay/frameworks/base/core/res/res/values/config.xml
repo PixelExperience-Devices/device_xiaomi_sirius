@@ -667,13 +667,15 @@
          Note that a physical cutout should be configured in pixels for the best results.
          -->
     <string translatable="false" name="config_mainBuiltInDisplayCutout">
-        M295,0
-        295.818519,24.176374
-        C285.295731,69.8076784 267.243762,88 236.156733,88
-        L0,88
-        L-236.156733,88
-        C-267.243762,88 -285.295731,69.8076784 -295.818519,24.176374
-        L-295,0
+        M-273,38
+        C-267.971,66.428 -258.501,85 -219,85
+        L219,85 C258.501,85 267.971,66.428 273,38
+        L275,27 C278.312,8.531 288.613,3.53 293,2
+        C298.735,-0.000999997016 303.336,2.98420143e-09 308,-1.9732127e-09
+        L-308,-1.9732127e-09
+        C-303.335,2.98420143e-09 -298.735,-0.000999997016 -293,2
+        C-288.613,3.53 -278.312,8.531 -275,27
+        L-273,38
         Z
     </string>
 
@@ -681,10 +683,6 @@
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
-
-    <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">88.0px</dimen>
-    <dimen name="status_bar_height_landscape">24.0dp</dimen>
 
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND

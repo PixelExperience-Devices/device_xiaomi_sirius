@@ -6,27 +6,28 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/dipper/dipper-vendor.mk)
+# Inherit from sdm710-common
+$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2248
-TARGET_SCREEN_WIDTH := 1080
+# Vendor
+$(call inherit-product-if-exists, vendor/xiaomi/sirius/sirius-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Properties
--include $(LOCAL_PATH)/device-props.mk
-
-# Screen density
+# Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-# Inherit from sdm845-common
-$(call inherit-product, device/xiaomi/sdm845-common/sdm845.mk)
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2244
+TARGET_SCREEN_WIDTH := 1080
+
+# Add Calendar
+# PRODUCT_PACKAGES += \
+#     Calendar
 
 # Device fstab
 PRODUCT_PACKAGES += \
@@ -51,23 +52,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    lineage.livedisplay@2.0-service.xiaomi_sdm845
-
-# NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    nqnfcee_access.xml \
-    nqnfcse_access.xml \
-    NQNfcNci \
-    SecureElement \
-    Tag
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
+# PRODUCT_PACKAGES += \
+#     lineage.livedisplay@2.0-service.xiaomi_sdm710
 
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
+
+# Power
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf

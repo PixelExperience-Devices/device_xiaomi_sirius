@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2015 The ResurrectionRemix Project
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Battery temp -->
+    <string name="battery_temp_title">电池温度</string>
+
+    <!-- Selinux -->
+    <string name="selinux_status">SELinux 状态</string>
+    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status_permissive">Permissive</string>
+    <string name="selinux_status_enforcing">Enforcing</string>
+
+    <!-- About phone, uptime. Deep sleep ratio since last reboot. -->
+    <string name="status_deep_sleep">(深度睡眠: %1$d%2$s)</string>
+
+    <!-- Smart Clock -->
+    <string name="use_smart_clock">时钟智能显示</string>
+    <string name="use_smart_clock_summary">定期显示状态栏时钟</string>
+
+    <!-- Lockscreen items -->
+    <string name="lockscreen_clock_title">时钟小部件</string>
+    <string name="lockscreen_clock_summary">在锁屏界面显示时钟小部件</string>
+    <string name="lockscreen_info_title">时钟下面的项目</string>
+    <string name="lockscreen_info_summary">在锁屏上显示日期、天气、警报等信息</string>
+
+</resources>
