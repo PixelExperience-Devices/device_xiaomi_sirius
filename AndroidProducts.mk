@@ -14,4 +14,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/rr_sirius.mk
+	$(LOCAL_DIR)/cosp_sirius.mk
