@@ -679,6 +679,8 @@
         Z
     </string>
 
+    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">M -266,0 L -266,85 L 266,85 L 266,0 Z</string>
+
     <!-- Whether the display cutout region of the main built-in display should be forced to
          black in software (to avoid aliasing or emulate a cutout that is not physically existent).
          -->
@@ -702,5 +704,7 @@
         <item>XTRA_SERVER_2=http://gllto1.glpals.com/7day/v5/latest/lto2.dat</item>
         <item>XTRA_SERVER_3=http://gllto2.glpals.com/7day/v5/latest/lto2.dat</item>
     </string-array>
+
+    <bool name="config_physicalDisplayCutout">true</bool>
 
 </resources>
