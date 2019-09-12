@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2018-2019 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -25,8 +25,7 @@ BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="sirius-user 8.1.0 OPM1.171019.019 V9.5.6.0.OEBCNFA release-keys" \
-    PRODUCT_NAME="sirius" \
-    TARGET_DEVICE="sirius"
+    PRODUCT_NAME="sirius"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
