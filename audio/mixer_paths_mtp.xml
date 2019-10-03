@@ -537,19 +537,19 @@
 
     <path name="ultrasound-secondary-input">
     </path>
- 
+
     <path name="ultrasound-rampdown">
         <ctl name="Ultrasound RampDown" value="On" />
     </path>
-    
+
     <path name="ultrasound-screen-on">
          <ctl name="Ultrasound Event" value="1" />
     </path>
-    
+
     <path name="ultrasound-on">
         <ctl name="Ultrasound Rx Port" value="On" />
     </path>
-    
+
     <path name="ultrasound-suspend">
         <ctl name="Ultrasound Suspend" value="1" />
     </path>
@@ -2261,6 +2261,10 @@
         <ctl name="RX2 Digital Volume" value="76" />
     </path>
 
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path>
+
     <path name="headphones-44.1">
         <path name="headphones" />
     </path>
@@ -2316,6 +2320,11 @@
 
     <path name="voice-headset-mic">
         <path name="headset-mic" />
+    </path>
+
+    <path name="speaker-and-headphones-hifi-filter">
+        <path name="headphones" />
+        <path name="speaker" />
     </path>
 
     <path name="speaker-and-headphones">
