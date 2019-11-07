@@ -653,11 +653,11 @@
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
     <integer name="config_screenBrightnessSettingMinimum">1</integer>
-	
+
 	   <!-- Maximum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness above this level. -->
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
-	
+
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
 
@@ -708,13 +708,6 @@
         <item>1</item> <!-- COLOR_MODE_BOOSTED -->
         <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
     </integer-array>
-
-    <!-- Values for GPS configuration -->
-    <string-array translatable="false" name="config_gpsParameters">
-        <item>XTRA_SERVER_1=http://gllto.glpals.com/7day/v5/latest/lto2.dat</item>
-        <item>XTRA_SERVER_2=http://gllto1.glpals.com/7day/v5/latest/lto2.dat</item>
-        <item>XTRA_SERVER_3=http://gllto2.glpals.com/7day/v5/latest/lto2.dat</item>
-    </string-array>
 	
 	    <!-- If true, the display will be shifted around in ambient mode. -->
     <bool name="config_enableBurnInProtection">true</bool>
