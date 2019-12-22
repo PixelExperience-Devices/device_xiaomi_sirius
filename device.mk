@@ -34,11 +34,7 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.factory.rc
-
-# HIDL
-# PRODUCT_COPY_FILES += \
-#     $(LOCAL_PATH)/manifest.xml:system/etc/manifest.xml
+    init.target.rc
 
 # Input
 PRODUCT_COPY_FILES += \
@@ -49,10 +45,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.xiaomi_sdm710
 
 # PocketMode
 PRODUCT_PACKAGES += \
