@@ -7,12 +7,7 @@
 # Inherit from sdm710-common
 -include device/xiaomi/sdm710-common/BoardConfigCommon.mk
 
-BOARD_VENDOR := xiaomi
-
 DEVICE_PATH := device/xiaomi/sirius
-
-# Kernel
-TARGET_KERNEL_CONFIG := sirius_defconfig
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
@@ -22,6 +17,9 @@ TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
 TARGET_USES_COLOR_METADATA := true
 TARGET_USES_DRM_PP := true
+
+# Kernel
+TARGET_KERNEL_CONFIG := sirius_defconfig
 
 # Partitions
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864

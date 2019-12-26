@@ -6,27 +6,34 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit from sdm710-common
-$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
-
-# Vendor
+# Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/xiaomi/sirius/sirius-vendor.mk)
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2244
+TARGET_SCREEN_WIDTH := 1080
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2244
-TARGET_SCREEN_WIDTH := 1080
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml
 
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
 
-# Device uses high-density artwork where available
+# Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Inherit from sdm710-common
+$(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
 # Device fstab
 PRODUCT_PACKAGES += \
@@ -50,10 +57,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
 
-# NoCutoutOverlay
+# Secure element
 PRODUCT_PACKAGES += \
-    NoCutoutOverlay
-
-# Power
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
+    SecureElement
