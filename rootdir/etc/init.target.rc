@@ -103,6 +103,8 @@ on post-fs-data
 # Silver Only configuration cannot work with 0-7
 on boot
     chown system system /sys/kernel/hbtp/display_pwr
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/blink
     chown system system /sys/class/drm/card0-DSI-1/disp_param
     start rmt_storage
     start rfs_access
@@ -185,6 +187,11 @@ on property:sys.shutdown.requested=*
     stop vendor.per_proxy
     stop vendor.ims_rtp_daemon
 
+on boot
+    chown system system /sys/class/leds/red/blink
+    chown system system /sys/class/leds/green/blink
+    chown system system /sys/class/leds/blue/blink
+
 on charger
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
     write /sys/module/lpm_levels/system/system-pc/idle_enabled 0
@@ -209,6 +216,7 @@ on charger
     start poweroffm64
     start vendor.hvdcp_opti
     setprop sys.usb.configfs 1
+    start leds-sh
 
     mount tmpfs tmpfs /data
     start thermal-engine
@@ -283,6 +291,11 @@ service vendor.ims_rtp_daemon /system/vendor/bin/ims_rtp_daemon
 
 on property:vendor.ims.DATA_DAEMON_STATUS=1
     restart vendor.ims_rtp_daemon
+
+service leds-sh /system/vendor/bin/sh /vendor/etc/init.leds.sh
+    class core
+    user root
+    oneshot
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
