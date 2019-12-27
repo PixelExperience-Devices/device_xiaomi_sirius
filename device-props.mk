@@ -2,6 +2,10 @@
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.soundfx.type=mi
 
+# Bluetooth
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.bluetooth.bluetooth_audio_hal.disabled=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.sat.fallback.dist=45 \
