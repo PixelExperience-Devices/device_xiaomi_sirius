@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.leds.sh
 
 # Input
 PRODUCT_COPY_FILES += \
