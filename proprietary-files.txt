@@ -231,6 +231,10 @@ vendor/lib/vendor.qti.gnss@3.0-service.so|aed4f48ee569308fa58c1950d1a5962907f2e3
 -priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk;PRESIGNED
 -priv-app/HotwordEnrollmentXGoogleWCD9340/HotwordEnrollmentXGoogleWCD9340.apk;PRESIGNED
 
+# IR
+vendor/lib64/hw/consumerir.default.so|22621df28b47d9c7a381b500406858891a920840
+vendor/lib/hw/consumerir.default.so|d6f9dd41d088aed18f457a32adb5a07c13fc9e86
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|dd926cd019270442af7f955f19da33142c566bf5
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
