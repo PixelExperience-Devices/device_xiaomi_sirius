@@ -68,3 +68,7 @@ PRODUCT_PACKAGES += \
 # Secure element
 PRODUCT_PACKAGES += \
     SecureElement
+
+# Wallpapers
+PRODUCT_PACKAGES += \
+    PixelLiveWallpaperPrebuilt
