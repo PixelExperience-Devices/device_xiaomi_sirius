@@ -124,7 +124,7 @@
         <item>33.65</item>
         <item>42.59</item>
         <item>42.59</item>
-        <item>42.59</item> 
+        <item>42.59</item>
         <item>50.63</item>
         <item>64.76</item>
         <item>69.47</item>
@@ -690,7 +690,7 @@
 
     <!-- Minimum screen brightness setting allowed by the power manager.
          The user is forbidden from setting the brightness below this level. -->
-    <integer name="config_screenBrightnessSettingMinimum">3</integer>
+    <integer name="config_screenBrightnessSettingMinimum">4</integer>
 	
     <!-- Allow automatic adjusting of the screen brightness while dozing in low power state. -->
     <bool name="config_allowAutoBrightnessWhileDozing">true</bool>
@@ -742,5 +742,9 @@
         <item>XTRA_SERVER_2=http://gllto1.glpals.com/7day/v5/latest/lto2.dat</item>
         <item>XTRA_SERVER_3=http://gllto2.glpals.com/7day/v5/latest/lto2.dat</item>
     </string-array>
+	
+	    <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 
+    <bool name="config_displayBrightnessBucketsInDoze">true</bool>
 </resources>
