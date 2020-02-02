@@ -12,12 +12,6 @@ DEVICE_PATH := device/xiaomi/sirius
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
 
-# Display
-TARGET_HAS_HDR_DISPLAY := true
-TARGET_HAS_WIDE_COLOR_DISPLAY := true
-TARGET_USES_COLOR_METADATA := true
-TARGET_USES_DRM_PP := true
-
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 

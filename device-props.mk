@@ -13,15 +13,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.sat.fallback.luxindex=405 \
     persist.camera.sat.fallback.lux.d=20
 
+# Display
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.has_wide_color_display=true \
+    ro.surface_flinger.has_HDR_display=true
+
 # Display density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
-
-# Display features
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.displayfeature.histogram.enable=true \
-    ro.eyecare.brightness.threshold=3 \
-    ro.eyecare.brightness.level=8
 
 # Display postprocessing
 PRODUCT_PROPERTY_OVERRIDES += \
