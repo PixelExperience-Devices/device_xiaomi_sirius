@@ -30,5 +30,7 @@
     <dimen name="navigation_bar_height_landscape">34dp</dimen>
     <!-- Width of the navigation bar when it is placed vertically on the screen -->
     <dimen name="navigation_bar_width">34dp</dimen>
+    <!-- Default radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">15dp</dimen>
 
 </resources>
