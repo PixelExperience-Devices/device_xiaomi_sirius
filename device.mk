@@ -37,6 +37,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Inherit from sdm710-common
 $(call inherit-product, device/xiaomi/sdm710-common/sdm710.mk)
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Device fstab
 PRODUCT_PACKAGES += \
     fstab.qcom
