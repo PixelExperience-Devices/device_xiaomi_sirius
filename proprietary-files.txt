@@ -40,14 +40,13 @@ vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|0051b80635ee2fe06ca9b
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so|b469b784cd35aa7afeaba7e948a41537b0c09334
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.0-impl.so|384b6ceca9703c6f2fee5edc21947fdd6fdcc8d1
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|5de18d2d6621a052e1524e7f1c916097762b624a
-vendor/lib64/libbt-hidlclient.so|149e5d023c1aa194c8edbb96947a3465e20199a5
 vendor/lib64/libbtnv.so|3347db73e890a64f794414df55cecbd244f7ceb8
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|1b8ea7096ded35acef0bbc1a25840c0b1c12be04
 vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|9425f3b3d1b27cf1342499dd80bbac2d58a1b3f0
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|e14abd3a8413ccfac55339ad03b592bfe642b833
 
 # Camera
-vendor/bin/remosaic_daemon|dad62f231e45763115d0ffbc3e66d83396cf39a0	
+vendor/bin/remosaic_daemon|dad62f231e45763115d0ffbc3e66d83396cf39a0
 vendor/etc/camera/age_gender_bg|c730a4d5cb8976c5d944e0815cdcbef8ca7f2045
 vendor/etc/camera/camxoverridesettings.txt|cddc8077b38859d09d30b92910c6e14bdbf78b8e
 vendor/etc/camera/crown_156_128.bin|0e0a5e6ace7340ae5bfd3742db2d812d0bc0098c
