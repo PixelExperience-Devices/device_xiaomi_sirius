@@ -19,7 +19,6 @@ vendor/lib/rfsa/adsp/misound_res.bin|aeb77965bbb9568298a69f65527837ba9150f56e
 # Audio (speaker amplifier) firmware
 vendor/firmware/tas2557_uCDSP_aac.bin|6548f5982603a1bd04a1968f1cfdc3b1f607ca5d
 vendor/firmware/tas2557_uCDSP_goer.bin|6548f5982603a1bd04a1968f1cfdc3b1f607ca5d
-vendor/lib/soundfx/libmisoundfx.so|cdf48f361ce85257324a9e5a8cb857df19d6142e
 
 # Audio (speaker amplifier) calibration
 vendor/etc/tas2557_aac.ftcfg|a3e21bb8e933aabf8a1d9990298dc57a8229d412
@@ -322,6 +321,3 @@ vendor/etc/thermal-engine-sdm710-nolimits.conf|3980d553da65d0be53f16ae459aae5479
 vendor/etc/thermal-engine-sdm710-phone.conf|7ec388883807d81ba379c1950d0870e429e88647
 vendor/etc/thermal-engine-sdm710-pubgmhd.conf|fa0ca46fcb0029f143461f8f483e8f3b53210cda
 vendor/etc/thermal-engine-sdm710-sgame.conf|89f127476d00e9a12dc5021ab28e2c05dc7c8b2d
-
-# WiFi
-vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so|1a6789c96cb68106631512114d974cc3f23741d0
