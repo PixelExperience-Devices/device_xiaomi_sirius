@@ -76,6 +76,8 @@ on post-fs-data
 
 on boot
     chown system system /sys/kernel/hbtp/display_pwr
+    chown system system /sys/class/leds/white/brightness
+    chown system system /sys/class/leds/white/blink
     chown system system /sys/class/drm/card0-DSI-1/disp_param
     start rmt_storage
     start rfs_access
