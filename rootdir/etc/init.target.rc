@@ -229,12 +229,3 @@ on property:init.svc.zygote=running
 
 on property:init.svc.zygote=restarting
     stop ppd
-
-service remosaic_daemon /system/vendor/bin/remosaic_daemon
-    class late_start
-    user camera
-    group camera
-    disabled
-
-on property:ro.product.name=sirius
-    start remosaic_daemon
