@@ -173,12 +173,13 @@ vendor/etc/sdr_config.cfg|4e0901a44be67f92b747e2c34d13f8858f9cc010
 vendor/etc/hdr_config.cfg|14bd7906643998c6b6bb51be5f20007232eaccc3
 
 # Fingerprint
-vendor/lib64/hw/fingerprint.fpc.so|0f9ad44765f563ebb29671e497830e334fde6cf7
-vendor/lib64/hw/fingerprint.goodix.so|68dcd78df94cbd0f400427739a33709ef2c7a513
-vendor/lib64/libgf_ca.so|a1d7f03b8c65e346f7931a64347ab95b3138c7a3
-vendor/lib64/libgf_hal.so|08bafbcc6f80eed7524689f1904a7ceb551b04d0
-vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so|ca2d742bebf47661395a944c4642f5dcdc5175cf
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so|241479a335ea91ab6c903c74f64aad3bae0a3b61
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sdm710.so
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.sdm710.so
+vendor/lib64/com.fingerprints.extension@1.0.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
 # GPS and GNSS
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|1f4a3cd823f19eb8a6f12a725506b6fa5d661ad7
