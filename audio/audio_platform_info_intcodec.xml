@@ -78,7 +78,6 @@
     </config_params>
     <acdb_ids>
         <device name="SND_DEVICE_OUT_SPEAKER" acdb_id="14"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" acdb_id="14"/>
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED" acdb_id="124"/>
         <device name="SND_DEVICE_OUT_VOICE_SPEAKER_PROTECTED" acdb_id="101"/>
         <device name="SND_DEVICE_OUT_SPEAKER_PROTECTED_VBAT" acdb_id="124"/>
@@ -122,7 +121,6 @@
         <device name="SND_DEVICE_OUT_VOICE_TTY_VCO_HEADPHONES" backend="headphones" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_HANDSET" interface="INT0_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER" backend="speaker" interface="PRI_MI2S_RX"/>
-        <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" backend="speaker" interface="PRI_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_1" interface="INT4_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_EXTERNAL_2" interface="INT4_MI2S_RX"/>
         <device name="SND_DEVICE_OUT_SPEAKER_REVERSE" interface="INT4_MI2S_RX"/>
@@ -385,3 +383,4 @@
         </input_snd_device>
     </snd_devices>
 </audio_platform_info>
+
