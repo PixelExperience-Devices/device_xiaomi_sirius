@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
 
+# NQ Client
+PRODUCT_PACKAGES += \
+    libchrome.vendor
+
 # Secure element
 PRODUCT_PACKAGES += \
     SecureElement
