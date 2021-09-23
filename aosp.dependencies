@@ -11,10 +11,10 @@
    "branch": "eleven"
   },
   {
-     "repository": "kdrag0n/proton-clang",
-     "target_path": "prebuilts/clang/host/linux-x86/clang-proton",
-     "branch": "master",
-     "remote": "github"
+    "repository"  : "baalajimaestro/aosp-clang",
+    "target_path" : "prebuilts/clang/host/linux-x86/clang-master",
+    "branch"      : "master",
+    "remote"      : "gitlab"
   },
   {
     "repository": "vendor_xiaomi-firmware",
