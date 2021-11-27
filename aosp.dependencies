@@ -2,24 +2,18 @@
   {
      "repository":  "vendor_xiaomi_sirius",
      "target_path": "vendor/xiaomi/sirius",
-     "branch": "eleven",
+     "branch": "twelve",
      "remote": "pixel-devices-blobs"
   },
   {
    "repository": "device_xiaomi_sdm710-common",
    "target_path": "device/xiaomi/sdm710-common",
-   "branch": "eleven"
-  },
-  {
-    "repository"  : "baalajimaestro/aosp-clang",
-    "target_path" : "prebuilts/clang/host/linux-x86/clang-master",
-    "branch"      : "master",
-    "remote"      : "gitlab"
+   "branch": "twelve"
   },
   {
     "repository": "vendor_xiaomi-firmware",
     "target_path": "vendor/xiaomi-firmware",
-    "branch": "eleven",
+    "branch": "twelve",
     "remote": "pixel-devices-blobs"
   }
 ]
