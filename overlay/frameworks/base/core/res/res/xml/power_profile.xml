@@ -79,8 +79,8 @@
         <value>322.98</value>
         <value>333.66</value>
     </array>
-    <item name="cpu.awake">9.6</item>
-    <item name="cpu.idle">6.44</item>
+    <item name="cpu.idle">9.6</item>
+    <item name="cpu.suspend">6.44</item>
     <array name="memory.bandwidths">
         <value>22.7</value>
     </array>
@@ -97,4 +97,20 @@
         <value>.2</value>
         <value>2</value>
     </array>
+    <item name="modem.controller.sleep">0</item>
+    <item name="modem.controller.idle">0</item>
+    <item name="modem.controller.rx">0</item>
+    <array name="modem.controller.tx">
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+        <value>0</value>
+    </array>
+    <item name="modem.controller.voltage">0</item>
+    <array name="gps.signalqualitybased">
+        <value>0</value>
+        <value>0</value>
+    </array>
+    <item name="gps.voltage">0</item>
 </device>
