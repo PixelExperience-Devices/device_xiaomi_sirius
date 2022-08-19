@@ -95,6 +95,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SecureElement
 
+# Shims
+PRODUCT_PACKAGES += \
+    libpiex_shim
+
 # Wallpapers
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
