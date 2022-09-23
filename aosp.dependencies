@@ -2,18 +2,18 @@
   {
      "repository":  "vendor_xiaomi_sirius",
      "target_path": "vendor/xiaomi/sirius",
-     "branch": "twelve",
+     "branch": "thirteen",
      "remote": "pixel-devices-blobs"
   },
   {
    "repository": "device_xiaomi_sdm710-common",
    "target_path": "device/xiaomi/sdm710-common",
-   "branch": "twelve"
+   "branch": "thirteen"
   },
   {
     "repository": "vendor_xiaomi-firmware",
     "target_path": "vendor/xiaomi-firmware",
-    "branch": "twelve",
+    "branch": "thirteen",
     "remote": "pixel-devices-blobs"
   }
 ]
